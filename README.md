@@ -1,6 +1,6 @@
 # Gen5W Auto DST
 
-**Experimental V2 — standalone NEMESIS port of [Cabinwright Tweaks auto-dst](https://github.com/cabinwright/tweaks), by hazptr / Cabinwright.**
+**Experimental V2 â€” standalone NEMESIS port of [Cabinwright Tweaks auto-dst](https://github.com/cabinwright/tweaks), by hazptr / Cabinwright.**
 
 The port uses the head unit's selected factory UTC-offset timezone and the upstream US/Canada daylight saving time rule. It is not restricted to Pacific time.
 
@@ -41,6 +41,8 @@ For no DST, use `DST_RULE='none'`. Configure before installation by editing `pac
 ## Compatibility and current evidence
 
 Inspected setup: **2023 Hyundai IONIQ 5 SEL**, US Gen5W, Android **4.4.2 / API 19**, head unit **NE1AE.S5BMC.US**, firmware **NEEV23.USA.S5W_M.V015.012.260507**.
+
+Also accepted: firmware **NEEV23.USA.S5W_M.V016.010.260903**, 2023 Hyundai IONIQ 5 Limited AWD (US). Service transactions 3 `isDst` and 4 `setDst` have the same names on this firmware. The package installs there; automatic seasonal switching is not yet confirmed.
 
 The factory Binder interface was independently checked against this vehicle's code. The installer retains checksum checks for the inspected `automotive.odex` and `automotive-service.odex`; matching firmware date text alone is not sufficient. Other factory-framework binaries are rejected. This firmware compatibility check is separate from timezone selection.
 
