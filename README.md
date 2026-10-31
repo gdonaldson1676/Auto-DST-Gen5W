@@ -1,6 +1,6 @@
 # Gen5W Auto DST
 
-**Experimental V2 â€” standalone NEMESIS port of [Cabinwright Tweaks auto-dst](https://github.com/cabinwright/tweaks), by hazptr / Cabinwright.**
+**Experimental V2 — standalone NEMESIS port of [Cabinwright Tweaks auto-dst](https://github.com/cabinwright/tweaks), by hazptr / Cabinwright.**
 
 The port uses the head unit's selected factory UTC-offset timezone and the upstream US/Canada daylight saving time rule. It is not restricted to Pacific time.
 
